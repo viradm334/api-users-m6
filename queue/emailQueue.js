@@ -32,8 +32,9 @@ emailQueue.process(async (job) => {
         <p>Welcome to API Users App! Your registration was successful. We hope you're having a great time here!</p>
       `
     });
-  
-    console.log('Email sent:', info.messageId);
+    
+    const now = new Date().toISOString();
+    console.log(`[${now}] QUEUED EMAIL: ${info.messageId} - To: ${email}`);
   });
 
 module.exports = emailQueue;
