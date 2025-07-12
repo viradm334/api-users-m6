@@ -2,6 +2,15 @@
 
 Aplikasi ini ditujukan untuk melihat data dari database, membuat user baru, dan mengirimkan email Sign-Up Notification kepada user yang baru didaftarkan.
 
+## Fitur
+
+Ada dua endpoint yang dapat dijalankan:
+
+- GET /users untuk memberikan data user dummy yang ada di database.
+- POST /users untuk membuat user baru dan mengirimkan email Sign-Up Notification kepada inbox user baru.
+
+Note: Semua request yang dijalankan dan email yang masuk queue akan tercatat dalam log aplikasi.
+
 ## Cara Menjalankan Aplikasi
 
 1. Copy isi file dari .env.example ke dalam file .env.
